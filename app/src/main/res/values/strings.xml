@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tc排水口调查</string>
+    
+    
+    <string name="direction">
+        1.点击"采集"按钮进行数据调查采集，采集完成点击保存按钮即可.\n
+        2.点击"导出"按钮进行数据导出成excel表，数据文件在手机文件夹《TC排水口调查》中，此文件夹中包括Excel文件和照片文件夹，
+        工作完成后把这个文件夹发给内页人员即可.
+    </string>
+</resources>

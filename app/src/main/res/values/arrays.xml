@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="water_num">
+        <item>分流制排水口</item>
+        <item>合流制排水口</item>
+        <item>其它排水口</item>
+    </string-array>
+
+    <string-array name="water_type_num">
+        <item>分流制污水直排排水口</item>
+        <item>分流制雨水直排排水口</item>
+        <item>合流制雨水直排排水口</item>
+        <item>合流制截流溢流排水口</item>
+        <item>泵站排水口</item>
+        <item>沿河居民排水口</item>
+        <item>设施应急排水口</item>
+
+    </string-array>
+
+    <string-array name="end_control">
+        <item>直排</item>
+        <item>拍门</item>
+        <item>鸭嘴阀</item>
+        <item>闸门</item>
+
+    </string-array>
+
+    <string-array name="flow_type">
+        <item>自由出流</item>
+        <item>淹没出流</item>
+
+    </string-array>
+
+    <string-array name="water_level">
+        <item>水位占排水口断面1/5</item>
+        <item>水位占排水口断面1/4</item>
+        <item>水位占排水口断面1/3</item>
+        <item>水位占排水口断面1/2</item>
+        <item>水位占排水口断面2/3</item>
+        <item>水位占排水口断面4/5</item>
+    </string-array>
+
+    <string-array name="ds_type">
+        <item>圆形</item>
+        <item>方形</item>
+        <item>矩形</item>
+    </string-array>
+
+    <string-array name="excel_title">
+        <item>ID</item>
+        <item>水体名称</item>
+        <item>调查地段</item>
+        <item>调查日期</item>
+        <item>调查天气</item>
+        <item>调查单位</item>
+        <item>调查人员</item>
+        <item>排水口编号</item>
+        <item>调查时间</item>
+        <item>排水口类型</item>
+        <item>坐标X</item>
+        <item>坐标Y</item>
+        <item>断面形式</item>
+        <item>断面尺寸</item>
+        <item>断面材质</item>
+        <item>末端控制</item>
+        <item>出流形式</item>
+        <item>管底高程</item>
+        <item>水体常水位</item>
+        <item>旱天排水量</item>
+        <item>旱天排水水质</item>
+        <item>雨天排水量</item>
+        <item>雨天排水水质</item>
+        <item>照片名字</item>
+        <item>备注</item>
+    </string-array>
+
+
+
+</resources>

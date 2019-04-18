@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="数据采集"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_cycle"
+            android:text="关闭"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="水体名称" />
+
+                <EditText
+                    android:id="@+id/edtWaterName"
+                    style="@style/edt_style"
+                    android:hint="水体名称" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="调查地段" />
+
+                <EditText
+                    android:id="@+id/edtLocalName"
+                    style="@style/edt_style"
+                    android:hint="调查地段/河段" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="调查日期" />
+
+                <EditText
+                    android:id="@+id/edtDate"
+                    style="@style/edt_style"
+                    android:hint="调查日期" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="天气情况" />
+
+                <EditText
+                    android:id="@+id/edtWeather"
+                    style="@style/edt_style"
+                    android:hint="天气情况" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="调查单位" />
+
+                <EditText
+                    android:id="@+id/edtUnit"
+                    style="@style/edt_style"
+                    android:hint="调查单位" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="调查人员" />
+
+                <EditText
+                    android:id="@+id/edtSurveyMan"
+                    style="@style/edt_style"
+                    android:hint="调查人员签名" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="排水口编号" />
+
+                <Spinner
+                    android:id="@+id/sp_water_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/water_num"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="调查时间" />
+
+                <EditText
+                    android:id="@+id/edtTime"
+                    style="@style/edt_style"
+                    android:hint="调查时间" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="类型编号" />
+
+                <Spinner
+                    android:id="@+id/sp_water_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/water_type_num"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="断面形式" />
+
+
+                <Spinner
+                    android:id="@+id/sp_Ds_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/ds_type"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="断面尺寸" />
+
+                <EditText
+                    android:id="@+id/edtDsSize"
+                    style="@style/edt_style"
+                    android:hint="排水口断面尺寸"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="材质" />
+
+                <EditText
+                    android:id="@+id/edtTexture"
+                    style="@style/edt_style"
+                    android:hint="排水口材质" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="末端控制" />
+
+                <Spinner
+                    android:id="@+id/sp_end_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/end_control"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="出流形式" />
+
+                <Spinner
+                    android:id="@+id/sp_flow_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/flow_type"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="水体常水位" />
+
+                <Spinner
+                    android:id="@+id/sp_water_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/water_level"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="照片编号" />
+
+                <EditText
+                    android:id="@+id/edtPicName"
+                    style="@style/edt_style"
+                    android:hint="照片编号" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_takepic"></include>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="坐标X" />
+
+                <EditText
+                    android:id="@+id/edtX"
+                    style="@style/edt_style"
+                    android:hint="排水口X坐标"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+
+                    android:text="坐标Y" />
+
+                <EditText
+                    android:id="@+id/edtY"
+                    style="@style/edt_style"
+                    android:hint="排水口Y坐标"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="管底高程" />
+
+                <EditText
+                    android:id="@+id/edtH"
+                    style="@style/edt_style"
+                    android:hint="管底高程"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="旱天排水量" />
+
+                <EditText
+                    android:id="@+id/edtDryDis"
+                    style="@style/edt_style"
+                    android:hint="旱天排水量" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="旱天排水水质" />
+
+                <EditText
+                    android:id="@+id/edtDryQuality"
+                    style="@style/edt_style"
+                    android:hint="旱天排水水质" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="雨天排水量" />
+
+                <EditText
+                    android:id="@+id/edtRainyDis"
+                    style="@style/edt_style"
+                    android:hint="雨天排水量" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_style">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="雨天排水水质" />
+
+                <EditText
+                    android:id="@+id/edtRainyQuality"
+                    style="@style/edt_style"
+                    android:hint="雨天排水水质" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tv_style"
+                    android:text="备注" />
+
+                <EditText
+                    android:id="@+id/edtRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:hint="备注"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center">
+
+                <Button
+                    android:background="@drawable/btn_cycle"
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:textColor="@color/white"
+                    android:text="保存" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.tcdrainsurvey.MainActivity"
+    android:background="@color/green01">
+
+
+    <TextView
+        android:textSize="18dp"
+        android:gravity="center"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="天驰排水口调查"/>
+
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/direction"
+        android:layout_below="@+id/tv_title"
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+      >
+
+        <Button
+            android:textColor="@color/white"
+            android:background="@drawable/btn_cycle"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="采集" />
+
+
+        <Button
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_cycle"
+            android:text="导出"
+            android:id="@+id/btnExport"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_cycle"
+            android:id="@+id/btnQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="查看数量" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_count"
+            android:text="采集数量：0"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
